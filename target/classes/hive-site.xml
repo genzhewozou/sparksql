@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://192.168.29.17:3306/hive?createDatabaseIfNotExist=true</value>
+        <description>JDBC connect string for a JDBC metastore</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+        <description>Driver class name for a JDBC metastore</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>root</value>
+        <description>Username to use against metastore database</description>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>Woaini,1996</value>
+        <description>password to use against metastore database</description>
+    </property>
+
+    <property>
+        <name>hive.exec.local.scratchdir</name>
+        <value>/usr/local/hive/tmp</value>
+        <description>Local scratch space for Hive jobs</description>
+    </property>
+    <property>
+        <name>hive.downloaded.resources.dir</name>
+        <value>/usr/local/hive/tmp/resources</value>
+        <description>Temporary local directory for added resources in the remote file system.</description>
+        <name>hive.querylog.location</name>
+        <value>/usr/local/hive/tmp</value>
+        <description>Location of Hive run time structured log file</description>
+    </property>
+    <property>
+        <name>hive.server2.logging.operation.log.location</name>
+        <value>/usr/local/hive/tmp/operation_logs</value>
+        <description>Top level directory where operation logs are stored if logging functionality is enabled</description>
+    </property>
+</configuration>
+
